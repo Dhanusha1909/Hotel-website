@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanu Bites</title>
+    <style>
+        <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: url(./image.png) no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      width: 90%;
+      max-width: 400px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      transition: transform 0.5s;
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color:#d30031;
+    }
+    .form-group {
+      margin-bottom: 15px;
+      border-color:10rem solid #d35400;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .btn {
+      background-color: #d35400;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .toggle {
+      text-align: center;
+      margin-top: 15px;
+      color: #444;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .hidden {
+      display:none;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 20px;
+      }
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container" id="authcontainer">
+        <h2 id="formTitle">SIGN IN</h2>
+        <form id="signinform">
+            <div class="form-group">
+                <label for="signinEmail">Email</label>
+                <input type="email" id="signinEmail" required/>
+            </div>
+            <div class="form-group">
+                <label for="signinpassword">Password</label>
+                <input type="password" id="signinpassword" rquired/>
+            </div>
+            <button type="submit" class="btn">Sign In</button>
+        </form>
+        
+
+        <!---sign up-->
+        <form id="signupForm" class="hidden">
+            <div class="form-group">
+                <label for="signupName">Name</label>
+                <input type="text" id="signupName" required/>
+            </div>
+            <div class="form-group">
+                <label for="signupEmail">Email</label>
+                <input type="email" id="signupEmail" required/>
+            </div>
+            <div class="form-group">
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" required/>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+
+        <div class="toggle" onclick="toggleForm()">
+            Don't have an account? Sign Up
+        </div>
+        </div>
+
+        <!---script code-->
+        <script>
+            document.addEventListener('DOMContentLoaded',()=>{
+            const signinform=document.getElementById('signinform');
+            const signupForm=document.getElementById('signupForm');
+            const formTitle=document.getElementById('formTitle');
+            const toggleText=document.querySelector('.toggle');
+
+            function toggleForm(){
+                signinform.classList.toggle('hidden');
+                signupForm.classList.toggle('hidden');
+                if(signinform.classList.contains('hidden')){
+                    formTitle.innerText='Sign Up';
+                    toggleText.innerText='Already have an account? Sign In';
+                }else{
+                    formTitle.innerText='Sign In';
+                    toggleText.innerText="Don't have an account? Sign Up";
+                }
+            }
+            toggleText.addEventListener('click',toggleForm);
+
+            signinform.addEventListener('submit',(e)=>{
+                e.preventDefault();
+                alert("Signed in successfully!");
+            })
+
+            signupForm.addEventListener('submit',(e)=>{
+                e.preventDefault();
+                alert("Account created successfully!");
+            });
+        });
+        </script>
+</body>
+</html>

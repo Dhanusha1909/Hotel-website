@@ -1,0 +1,193 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    text-align:center;
+    background:#e3cfcf;
+
+}
+
+h2{
+    color:#333;
+
+}
+
+.btn{
+    display:inline;
+}
+header{
+    background-image:url(./dsc_0250.jpg);
+    color:white;
+    padding:15px;
+}
+nav ul{
+    list-style:none;
+    
+    text-align: left;
+}
+nav ul li{
+    display:inline;
+    margin:0 5px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+.nav-btn svg{
+    fill:white;
+    position:absolute;
+    top:5%;
+    left:3%;
+    cursor:pointer;
+    transition:background-color 0.3s ease;
+    
+}
+.nav-btn svg:hover{
+    background-color: rgba(200, 215, 206, 0.87);
+}
+.popular-food{
+    padding:40px;
+}
+.food-container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    gap:10px;
+    
+}
+
+.food-card{
+    background-color: white;
+    padding:15px;
+    border-radius: 8px;
+    box-shadow:2px 2px 10px rgba(0,0,0,0.1);
+    width:200px;
+
+}
+.food-card img{
+    width:200px;
+    border-radius: 5px;
+    height:100px;
+}
+
+.why-choose-us ul{
+    list-style:none;
+    padding:0;
+
+}
+
+.why-choose-us ul li{
+    font-size: 18px;
+    margin 10px 0;
+}
+.customer-feedback{
+    padding:40px;
+}
+.feedback-container{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+.feedback-card{
+  background: white;
+  padding:15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  width:250px;
+}
+.newsletter{
+    background:#333;
+    color:white;
+    padding:30px;
+}
+.newsletter form{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+.newsletter input{
+    padding:10px;
+    border-radius:5px;
+    border:10px;
+    width:250px;
+}
+.newsletter button{
+    padding:10px 20px;
+    background:#ff5733;
+    color:white;
+    border:none;
+    border-radius: 5px;
+}
+.about{
+    background-image:url(./chickenlaplipop.jpg)
+}
+
+.chef-container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    gap:10px;
+}
+
+.chef{
+    background-color: white;
+    padding:15px;
+    border-radius: 8px;
+    box-shadow:2px 2px 10px rgba(218, 93, 93, 0.1);
+    width:200px;
+}
+.chef img{
+    width:200px;
+    height:100px;
+    border-radius: 5px;
+}
+.contact{
+    text-align: center;
+    padding:50px;
+}
+
+.contact-info{
+    font-size:18px;
+    margin-bottom: 20px;
+}
+form{
+    max-width:400px;
+    margin:auto;
+}
+form input,form textarea{
+    width:100px;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    background: #ff5733;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    cursor:pointer;
+}
+.message{
+    background-image: url(./logo.png);
+}
+.form{
+    display:none;
+    flex-direction: column;
+    gap:10px;
+}
+input{
+    width:100%;
+    padding:10px;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+.submit:hover{
+   background:#ff5277;
+}
+#signin-container{
+    display:flex;
+}

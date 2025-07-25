@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A table</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            color:#333;
+        
+        }
+        .book-table{
+            background-color: #ccc;
+            padding:30px 20px;
+            text-align: center;
+        }
+        .container{
+            max-width:400px;
+            margin:auto;
+            background:#ffffff;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.1);
+        }
+        .book-table h2{
+            font-size:2em;
+            margin-bottom:10px;
+        }
+        .book-table p{
+            color:#666;
+            margin-bottom:30px;
+        }
+        .form-group{
+            margin-bottom:20px;
+        }
+        input,select,button{
+            width:100%;
+            padding:12px;
+            border:1px solid #ccc;
+            border-radius:6px;
+        }
+        button{
+            background-color:#ff6b35;
+            color:white;
+            border:none;
+            cursor:pointer;
+            transition:background 0.3s;
+        }
+        button:hover{
+            background-color:brown
+        }
+    </style>
+</head>
+<body>
+    <section class="book-table">
+        <div class="cointainer">
+            <h2>Book A Table</h2>
+            <p>Reserve your seat in advance and enjoy your meal without the wait!</p>
+            <form action="book-table.php" method="POST" id="bookingForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required/>
+
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required/>
+
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phone" placeholder="Your Phone Number" required/>
+
+                </div>
+                <div class="form-group">
+                    <input type="date" name="date" required/>
+
+                </div>
+                <div class="form-group">
+                    <input type="time" name="time" required/>
+                </div>
+                <div class="form-group">
+                    <select name="people" reqiured>
+                        <option value="">Number Of People</option>
+                        <option value="1">1 person</option>
+                        <option value="2">2 people</option>
+                        <option value="3">3 people</option>
+                        <option value="4">4 people</option>
+                        <option value="5+">5 or more</option>
+                    </select>
+                </div>
+                <button type="submit">Book Now!</button>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>

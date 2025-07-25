@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhanu Bites-Food Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+            font-family: 'Roboto',sans-serif;
+        }
+        body{
+            background: linear-gradient(to right,#1c1c1c,#2a2a2a);
+            color:#fff;
+        }
+        .menu-container{
+            max-width:1100px;
+            margin:2rem auto;
+            backround:#2a2a2a;
+            border-radius:10px;
+            padding:2rem;
+            box-shadow:0 0 10px rgba(0,0,0,00.5s);
+        }
+        .menu-header{
+            text-align:center;
+            margin-bottom:2rem;
+        }
+        .menu-header h1{
+            font-size:1.8 rem;
+            color:#fdd835;
+        }
+        .menu-section{
+            margin-bottom:2rem;
+        }
+        .section-title{
+            font-size:1.8rem;
+            color:#fdd835;
+            margin-bottom:1rem;
+        }
+        .menu-items{
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap:1rem;
+        }
+        .menu-card{
+            background:#333;
+            padding:1rem;
+            border-radius:10px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            transition:transform 0.3s ease;
+        }
+        .menu-card:hover{
+            transform:scale(1.05);
+        }
+        .menu-card img{
+            width:100%;
+            max-width:200px;
+            height:140px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+        .menu-card h4{
+            margin:1rem 0 0.5rem;
+            font-size:1.2rem;
+        }
+        .menu-card p{
+            font-size:1rem;
+            color:#ccc;
+        }
+        .footer{
+            text-align:center;
+            padding:1rem;
+            background:#111;
+            color:#aaa;
+            font-size:0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-header">
+            <h1>Dhanu Bites-Food Menu</h1>
+        </div>
+        <div class="menu-section">
+            <h2 class="section-title">Main Course</h2>
+            <div class="menu-items">
+                <div class="menu-card"><img src="./tempFileForShare_20250412-153554.jpg" ><h4>Fried Rice</h4><p>RS:100</p></div>
+                <div class="menu-card"><img src="./tempFileForShare_20250412-153901.jpg"><h4>Veg Rice</h4><p>RS:120</p></div>
+                <div class="menu-card"><img src="./tempFileForShare_20250412-154111.jpg"><h4>Meals</h4><p>RS:150</p></div>
+                <div class="menu-card"><img src="./tempFileForShare_20250412-154345.jpg"><h4>Briyani</h4><p>RS:170</p></div>
+                <div class="menu-card"><img src="./tempFileForShare_20250412-154842.jpg"><h4>Aloo paratha</h4><p>RS:50</p></div>
+            </div>
+        </div>
+        <div class="menu=section">
+            <h2 class="section-title">Appetizer</h2>
+            <div class="menu-items">
+                <div class="menu-card"><img src="./tempFileForShare_20250412-155230.jpg"><h4>Sandwicth</h4><p>RS:75</p></div>
+                <div class="menu-card"><img src="./chickenlaplipop.jpg"><h4>chicken-lalpipop</h4><p>RS:80</p></div>
+                <div class="menu-card"><img src="./tempFileForShare_20250412-155456.jpg"><h4>Burger</h4><p>RS:100</p></div>
+                <div class="menu-card"><img src="./tempFileForShare_20250412-155705.jpg"><h4>Giant Pizza</h4><p>RS:250</p></div>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h2 class="section-title">Drinks</h2>
+            <div class="menu-items">
+                <div class="menu-card"><img src="./tempFileForShare_20250412-155906.jpg"><h4>Smoothie</h4><p>RS:80</p></div>
+                <div class="menu-card"><img src="./tempFileForShare_20250412-160113.jpg"><h4>falooda</h4><p>RS:100</p></div>
+                <div class="menu-card"><img src="./tempFileForShare_20250412-160240.jpg"><h4>lamonade</h4><p>RS:70</p></div>
+                <div class="menu-card"><img src="./tempFileForShare_20250412-160431.jpg"><h4>Fresh-Juice</h4><p>RS:50</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Contact:9500240307
+    </div>
+</body>
+</html>
